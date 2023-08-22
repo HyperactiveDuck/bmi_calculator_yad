@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bmi_calculator_yad/constants.dart';
 
 bottomButton({required String text, required Function onPressed}) {
   return GestureDetector(
@@ -6,18 +7,14 @@ bottomButton({required String text, required Function onPressed}) {
       onPressed();
     },
     child: Container(
-      color: const Color.fromRGBO(0, 202, 179, 1),
+      color: bottomBarRenk,
       margin: const EdgeInsets.only(top: 10),
       width: double.infinity,
       height: 60,
       child: Center(
         child: Text(
           text,
-          style: const TextStyle(
-            color: Colors.black,
-            fontSize: 25,
-            fontWeight: FontWeight.bold,
-          ),
+          style: buttonTextStyle,
         ),
       ),
     ),

@@ -1,4 +1,4 @@
-import 'package:bmi_calculator_yad/constatns.dart';
+import 'package:bmi_calculator_yad/constants.dart';
 // ignore: unused_import
 import 'package:bmi_calculator_yad/pages/result_page.dart';
 import 'package:bmi_calculator_yad/widgets/bottom_button.dart';
@@ -244,7 +244,7 @@ class _MainColumnInputPageState extends State<MainColumnInputPage> {
           ),
         ),
         bottomButton(
-            text: 'Calculate',
+            text: buttonText1,
             onPressed: () {
               CalculatorBrain calc =
                   CalculatorBrain(height: height, weight: weight);

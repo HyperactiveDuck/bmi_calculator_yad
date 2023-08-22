@@ -5,6 +5,15 @@ const labelTextStyle = TextStyle(
   fontSize: 25.0,
   color: Color.fromARGB(255, 255, 255, 255),
 );
+const resultStringSyle = TextStyle(
+  fontSize: 50,
+  fontWeight: FontWeight.bold,
+);
+const buttonTextStyle = TextStyle(
+  fontSize: 25,
+  fontWeight: FontWeight.bold,
+  color: Colors.black,
+);
 const bottomBarHeight = 60.0;
 const Color bottomBarRenk = Color.fromRGBO(0, 202, 179, 1);
 const Color inactiveBarRenk = Color.fromRGBO(52, 58, 57, 1);
@@ -25,3 +34,7 @@ const heightLabel = 'HEIGHT';
 const weightLabel = 'WEIGHT';
 const ageLabel = 'AGE';
 const heightFormat = 'cm';
+String resultString = 'Your Result';
+String appBarTitle = 'BMI CALCULATOR';
+String buttonText1 = 'Calculate';
+String buttonText2 = 'Re-Calculate';

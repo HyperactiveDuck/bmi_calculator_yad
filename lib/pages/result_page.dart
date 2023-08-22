@@ -1,6 +1,6 @@
 import 'package:bmi_calculator_yad/widgets/bottom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:bmi_calculator_yad/constatns.dart';
+import 'package:bmi_calculator_yad/constants.dart';
 import 'package:bmi_calculator_yad/widgets/reusable_card.dart';
 
 class Results extends StatelessWidget {
@@ -18,7 +18,7 @@ class Results extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: const Text('BMI CALCULATOR'),
+        title: Text(appBarTitle),
         centerTitle: true,
       ),
       body: Column(
@@ -30,12 +30,9 @@ class Results extends StatelessWidget {
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  const Text(
-                    'Your Result',
-                    style: TextStyle(
-                      fontSize: 50,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Text(
+                    resultString,
+                    style: resultStringSyle,
                   ),
                   Text(
                     bmiResult,
@@ -70,7 +67,7 @@ class Results extends StatelessWidget {
             ),
           ),
           bottomButton(
-            text: 'Re-Calculate',
+            text: buttonText2,
             onPressed: () => Navigator.pop(context),
           ),
         ],
