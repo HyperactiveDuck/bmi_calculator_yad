@@ -1,3 +1,2 @@
-# bmi_calculator_yad
+# BMI Calculator Made With Flutter 
 
-A new Flutter project.
